@@ -2,7 +2,7 @@
 
 Name: Kaussar Meirambekkyzy Group: IT-2513
 
-Link:
+Link:https://meirambekkausar.github.io/web-assignment5/
 
 ---
 
