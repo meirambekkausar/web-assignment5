@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5: JavaScript Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Assignment 5: DOM & Events</h1>
+
+    <!-- Part 1 n 2: Profile & Form -->
+    <section class="card">
+      <h2>Part 1 & 2: User Profile & Form</h2>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username" required>
+        </div>
+        <div class="form-group">
+          <label for="birth-year">Birth Year:</label>
+          <input type="number" id="birth-year" placeholder="e.g. 2004" required min="1900" max="2026">
+        </div>
+        <button type="submit" id="update-btn">Create / Update Profile</button>
+      </form>
+
+      <div class="profile-display" id="profile-output">
+        <h3>Current Profile Info</h3>
+        <p><strong>Name:</strong> <span id="out-name">---</span></p>
+        <p><strong>Birth Year:</strong> <span id="out-year">---</span></p>
+        <p><strong>Is Developer:</strong> <span id="out-dev">---</span></p>
+        <p><strong>Calculated Age:</strong> <span id="out-age">---</span> years</p>
+        <p><strong>Age in Months:</strong> <span id="out-months">---</span> months</p>
+      </div>
+    </section>
+
+    <!-- Part 3: DOM List Manipulation -->
+    <section class="card">
+      <h2>Part 3: Dynamic List Manipulation</h2>
+      <div class="list-controls">
+        <input type="text" id="item-input" placeholder="Enter a new hobby/task">
+        <button type="button" id="add-btn">Add Item</button>
+        <button type="button" id="remove-btn" class="btn-danger">Remove Last Item</button>
+      </div>
+
+      <ul id="items-list">
+        <!-- Defitems rendered by script -->
+      </ul>
+      <p id="list-counter">Total Items: 0</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
